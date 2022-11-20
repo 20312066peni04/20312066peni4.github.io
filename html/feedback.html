@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/feedback.css"/>
+    <title>Saran</title>
+  </head>
+
+  <body>
+    <!--Nav bar -->
+    <section class="header">
+      <nav>
+        <a href="">
+          <img src="../image/lgo.jpeg" style="width: 100px" />
+        </a>
+        <div class="nav-links" id="nav_links">
+          <button
+            class="btn1"
+            onclick="hideMenu()"
+            style="background-color: transparent; border: 0px"
+          >
+            <i class="fa fa-close"></i>
+          </button>
+          <ul>
+            <li><a href="../html/index.html">HOME</a></li>
+                        <li><a href="../html/dashboard.html">DASHBOARD</a></li>
+                        <li><a href="../html/productpage.html">PILIHAN</a></li>  
+                        <li><a href="../html/feedback.html">CONTACT </a></li>
+                        <li><a href="../html/biodata.html">BIODATA</a></li>
+                        <li><a href="../html/Login.html">ACCOUNT</a></li>
+                        
+          </ul>
+        </div>
+        <button
+          class="btn1"
+          onclick="showMenu()"
+          style="background-color: transparent; border: 0px"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+      </nav>
+    </section>
+        
+        <div class="box-container">
+          <div class="box">
+              <div class="heading">SARAN</div>
+          </div>
+        </div>
+
+        <!--Feedback form-->
+
+        <div class="faq-field">
+            <form action="../php/feedback.php" class="faq-items" method="POST" onsubmit="return submit_form()">
+              <div class="form-container">
+                <div class="heading"> Floor is yours!</div>
+                <div class="forName">
+                  <input type="text" name="firstName" id="firstName" placeholder="First Name" class="input-box" required>
+                  <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="input-box" required>
+                </div>
+                <div class="forContact">
+                  <input type="email" name="email" id="email" placeholder="Email" class="input-box" required>
+                </div>
+                
+                <textarea name="message" class="input-box-message" name="message" id="message" cols="30" rows="10" placeholder="Comment" required></textarea>
+                <div class = "buttons">
+                  <input class="submit" type="submit" name="submit" id="submit" value="SUBMIT"> </input>
+                  <input class="submit" type="reset" id="reset" value="RESET"> </input>
+                 </div>
+              </div>
+        
+              
+            </form>
+            
+        </div>
+
+    </div>
+    <footer style="margin-top: 300px">
+      <div class="footer">
+      <div class="footer-content">
+          <div class="footer-section about">
+          <div class="img-footer">
+              <img src="../image/lgo.jpeg" />
+          </div>
+          <br />
+          <div class="line">
+              <hr>
+          </div>
+          <div class ="contact">
+              <span><i class="fas fa-map-pin"></i>&nbsp;&nbsp;Jalan SerbaJadi Tabek Indah, Lampung Selatan</span>
+              <span><i class="fas fa-envelope"></i>&nbsp; zonebeauty@gmail.com</span>
+              <span><i class="fas fa-phone"></i>&nbsp;  +6289601414040</span>
+          </div>
+          <br>
+
+          </div>
+          <div class="footer-section links">
+          <h2>Main Menu</h2>
+          <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">PILIHAN</a></li>
+              <li><a href="#">HELP</a></li>
+          </ul>
+          </div>
+          
+  </footer>
+
+    <script src="../js/feedback.js"></script>
+  </body>
+</html>

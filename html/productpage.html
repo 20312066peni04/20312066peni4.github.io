@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilihan warna</title>
+    <script src="https://kit.fontawesome.com/0d2ea414a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/ProductPage.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="product-page">
+        
+    <div class="product-page-navi">
+            <nav>
+                <a href="index.html"><img src="../image/lgo.jpeg" width="900" height="100"></a>
+
+              
+
+                <div class="nav-links" id="nav_links">
+                    <ul>
+                        <li><a href="../html/index.html">HOME</a></li>
+                        <li><a href="../html/dashboard.html">DASHBOARD</a></li>
+                        <li><a href="../html/productpage.html">PILIHAN</a></li>  
+                        <li><a href="../html/feedback.html">CONTACT </a></li>
+                        <li><a href="../html/biodata.html">BIODATA</a></li>
+                        <li><a href="../html/Login.html">ACCOUNT</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+ 
+
+    <!-- body -->
+
+                `
+
+        <div id="content-wrapper">
+
+            <div class="column">
+                <img id="featured" src="../image/polos(2).jpeg" alt="All iPhone Colors" >
+                <div id="slide-wrapper">
+            
+                        <img src="../image/polos(3).jpeg"alt="iPhone 13 Blue" class="thumbnail active">
+                        <img src="../image/polos(4).jpeg" alt="iPhone 13 Midnight" class="thumbnail ">
+                        <img src="../image/polos(5).jpeg" alt="iPhone 13 Product Red" class="thumbnail">
+                        <img src="../image/polos(6).jpeg" alt="iPhone 13 Starlight" class="thumbnail">
+                </div>
+            
+            </div>
+            <div class="column" id="textStuff">
+            
+                    <h1>Motif Polos</h2><br>
+                    <h2>ldr 30k</h3><br><br>
+                        <div class="nav-links" id="nav_links">
+                            <ul>
+                                <li><a href="../html/productpage2.html">Pilihan lainnya</a></li>
+                            </ul>
+                        </div>
+                    <p class="desc">Diskon 10% di hari tertentu (Info Instagram)</p>
+            
+            
+                <div id="sub-details">
+                    <br><br>
+                    <section id="prod">
+                        <h3>Deskripsi</h3>
+                        <p id="prodText">
+                           ini merupakan Zone nail fresh dan zone polos yaitu motif polos 10 jari/gliter tanpa ada sentuhan art.<br>
+                           dengan berbagai pilihan warna yang bisa dimix sesuai keinginan.<br>
+                           Dengan bahan kandungan yang pasti 100% halal dan peel off sehingga mudah dibersihkan namun tidak mudah lepas dalam kegiatan sehari-hari
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer style="margin-top: 300px">
+            <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                <div class="img-footer">
+                    <img src="../image/lgo.jpeg" />
+                </div>
+                <br />
+                <div class="line">
+                    <hr>
+                </div>
+                <div class ="contact">
+                    <span><i class="fas fa-map-pin"></i>&nbsp;&nbsp;Jalan SerbaJadi Tabek Indah, Lampung Selatan</span>
+                    <span><i class="fas fa-envelope"></i>&nbsp; zonebeauty@gmail.com</span>
+                    <span><i class="fas fa-phone"></i>&nbsp;  +6289601414040</span>
+                </div>
+                <br>
+    
+                </div>
+                <div class="footer-section links">
+                <h2>Main Menu</h2>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PILIHAN</a></li>
+                    <li><a href="#">HELP</a></li>
+                </ul>
+                </div>
+                
+        </footer>
+
+
+        
+    </div>
+
+    <!-- javascript -->
+
+        <script type="text/javascript">
+
+            let thumbnails = document.getElementsByClassName('thumbnail')
+            let activeImages = document.getElementsByClassName('active')
+
+            for(var i=0; i < thumbnails.length; i++)
+            {
+                thumbnails[i].addEventListener('click', function()
+                {
+
+                    if(activeImages.length > 0)
+                    {
+                        activeImages[0].classList.remove('active')
+                    }
+
+                    this.classList.add('active')
+                    document.getElementById('featured').src = this.src
+                })
+            }
+
+
+            let buttonRight = document.getElementById('slideRight')
+            let buttonLeft = document.getElementById('slideLeft')
+
+            buttonLeft.addEventListener('click', function()
+            {
+                document.getElementById('slider').scrollLeft -= 180;
+            })
+            buttonRight.addEventListener('click', function()
+            {
+                document.getElementById('slider').scrollLeft += 180;
+            })
+        </script>
+
+
+
+
+</body>
+</html>

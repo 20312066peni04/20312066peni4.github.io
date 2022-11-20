@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/Login.css">
+    <script src="../js/Login.js">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
+        rel="stylesheet" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="logoicon" src="../image/lgo.jpeg"></a>
+            <div class="nav-links" id="nav_links">
+                <ul>
+					<nav>
+						<a href="index.html"><img class="logoicon" src="../image/lgo.jpeg"></a>
+						<div class="nav-links" id="nav_links">
+							<ul>
+								<li><a href="../html/index.html">HOME</a></li>
+                        <li><a href="../html/dashboard.html">DASHBOARD</a></li>
+                        <li><a href="../html/productpage.html">PILIHAN</a></li>  
+                        <li><a href="../html/feedback.html">CONTACT </a></li>
+                        <li><a href="../html/biodata.html">BIODATA</a></li>
+                        <li><a href="../html/Login.html">ACCOUNT</a></li>
+							</ul>
+						</div>
+					</nav>
+                </ul>
+            </div>
+        </nav>
+        <!-- Login Division -->
+		<form action ="../php/shippingdetails.php" method="POST">
+		<div class="grid-container">
+            <div class="grid-child-left ">
+                <p class="Welcome">Alamat pemesanan</p><br><br>
+                <div class = "fill">
+					
+						<div class="name">
+							Name
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="text" name="Name">
+						</div><br><br>
+						<div class="pn">
+							Phone&nbsp;Number
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="tel" name="Phone_number">
+						</div><br><br>
+						<div class="address">
+							Address
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="text" name="Address">
+						</div><br><br>
+						<div class=district>
+							Pemesanan:&nbsp;&nbsp;&nbsp;&nbsp;
+							<select for="District" name="District">
+							 <option value="Ampara">Home Service</option>
+							 <option value="Anuradhapura">Ke Lokasi</option>
+							</select>
+						</div><br><br>
+			
+			
+						 <div class=district>
+							Lokasi Home service:&nbsp;&nbsp;&nbsp;&nbsp;
+							<select for="District" name="District">
+							 <option value="Rajabasa">Rajabasa</option>
+							 <option value="Kedaton">Kedaton</option>
+							 <option value="Natar">Natar</option>
+							 <option value="Sukarame">Sukarame</option>
+							 <option value="Sukabumi">Sukabumi</option>
+							 <option value="Untung suropati">Untung Suropati</option>
+							 <option value="Labuhan Ratu">Labuhan Ratu</option>
+							 <option value="Tanjung Karang">Tanjung Karang</option>
+							 <option value="Teluk Betung">Teluk Betung</option>
+							 <option value="Langkaputa">Langkapura</option>
+							 <option value="Kemiling">Kemiling</option>
+							 <option value="Lainnya">Lainnya</option>
+							 </select>
+						</div><br><br>
+						
+				</div>
+            </div>
+            <div class="grid-child-right">
+                <div class="sub">
+					<input type="submit" name="Save" class="Register" value="Save and Continue" style="margin-top: 30%;"></div>
+            </div>
+        </div>
+	</form>
+      
+               <!--Footer-->
+			   <footer style="margin-top: 300px">
+				<div class="footer">
+				<div class="footer-content">
+					<div class="footer-section about">
+					<div class="img-footer">
+						<img src="../image/lgo.jpeg" />
+					</div>
+					<br />
+					<div class="line">
+						<hr>
+					</div>
+					<div class ="contact">
+						<span><i class="fas fa-map-pin"></i>&nbsp;&nbsp;Jalan SerbaJadi Tabek Indah, Lampung Selatan</span>
+						<span><i class="fas fa-envelope"></i>&nbsp; zonebeauty@gmail.com</span>
+						<span><i class="fas fa-phone"></i>&nbsp;  +6289601414040</span>
+					</div>
+					<br>
+		
+					</div>
+					<div class="footer-section links">
+					<h2>Main Menu</h2>
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">PILIHAN</a></li>
+						<li><a href="#">HELP</a></li>
+					</ul>
+					</div>
+					
+			</footer>
+        </section>
+</body>
+</html>
+
